@@ -1,43 +1,24 @@
-<header class="site-header">
+<div id="Header">
+	<div class="Logo"><a href="{{ site.baseurl }}/" title="Home">{{ site.name }}</a></div>
 
-  <nav role="navigation" class="site-navigation">
-    <div class="site-width">
-      <a href="{{ site.baseurl }}" class="logo">
-        <svg>
-          <use xlink:href="#shape-logo" />
-        </svg>
-      </a>
-      <ul>
-        <li class="nav-design">
-          <a href="#0">
-            <svg>
-              <use xlink:href="#shape-triangle-up" />
-            </svg>
-            Design
-          </a>
-        </li>
-        <li class="nav-writing">
-          <a href="#0">
-            <svg>
-              <use xlink:href="#shape-triangle-down" />
-            </svg>
-            Writing
-          </a>
-        </li>
-        <li class="nav-about">
-          <a href="#0">
-            <svg>
-              <use xlink:href="#shape-triangle-up" />
-            </svg>
-            About
-          </a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+	<div id="GoogleSearch" style="position:absolute; right:2em; bottom:1em;">
+		<label for="googlesearch" style="font-weight:bold;">Search for knowledge:</label>
 
-  <div class="hero">
+		<form action="http://www.google.com/cse" id="cse-search-box" target="_blank">
+			<div>
+				<input type="hidden" name="cx" value="partner-pub-0108143917541488:76u9lg1u9m1" />
+				<input type="hidden" name="ie" value="ISO-8859-1" />
+				<input type="text" id="googlesearch" name="q" size="31" />
+				<input type="submit" name="sa" value="Search" />
+			</div>
+		</form>
 
-  </div>
+		<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+	</div><!--GoogleSearch-->
+</div><!--Header-->
 
-</header>
+<div id="Nav_Primary">
+	<ul>
+		{% include navigation.html %}
+	</ul>
+</div><!--Nav_Primary-->

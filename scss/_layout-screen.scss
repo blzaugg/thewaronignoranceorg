@@ -1,0 +1,295 @@
+﻿/*This file is reserved for screen layout styles only. No color. No typography.*/
+
+/********************************************************************/
+/*Browser "quirks" overrides*/
+html, body {margin:0; padding:0;} /*Removes browser default document "margins" in all browsers.*/
+a img {border:none 0px;} /*Removes browser default border on linked images.*/
+form {padding:0; margin:0;} /*Removes browser default "margins" on <form> elements.*/
+/********************************************************************/
+
+/********************************************************************/
+/*Shell*/
+#Page_Wrapper {}
+
+#Shell_Wrapper {
+	/*width:770px;*/
+	width:90%;
+	margin:0 auto; /*Center #Shell_Wrapper on page.*/
+	position:relative; /*Allows child elements to be position:absolute; relative to this element.*/
+}
+
+#Shell_Wrapper .Home {}
+#Shell_Wrapper .SubPage {}
+
+#Header {
+	height:6.5em;
+	border-bottom-style:solid;
+	border-bottom-width:4px;
+	position:relative; /*Allows child elements to be position:absolute; relative to this element.*/
+}
+
+/******************************/
+#Header .Logo {
+	position:absolute;
+	bottom:0.66em;
+	left:0.5em;
+}
+
+.Logo a {
+	display:inline-block;
+	padding:0.12em 0.2em;
+	border-top-style:solid;
+	border-top-width:2px;
+	border-bottom-style:solid;
+	border-bottom-width:2px;
+}
+/******************************/
+
+/******************************/
+#Nav_Primary {
+	position:absolute;
+	top:0;
+	right:0;
+}
+
+#Nav_Primary ul {
+	margin:0;
+	padding:0;
+}
+
+#Nav_Primary li {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	float:left;
+}
+
+#Nav_Primary a {
+	display:block;
+	padding:0.5em 0.66em 0.5em;
+	margin-bottom:0.25em;
+	margin-right:2px;
+	border-top-style:solid;
+	border-top-width:8px;
+}
+/******************************/
+
+#Body {clear:both;}
+
+#Content_Primary {padding:0 1.25em;}
+
+#Footer {
+	clear:both;
+	border-top-style:solid;
+	border-top-width:4px;
+	overflow:hidden;
+	position:relative; /*Allows child elements to be position:absolute; relative to this element.*/
+	padding:0.75em 2em 1em;
+}
+
+/******************************/
+#Footer .ColumnLeft {
+	float:right;
+	width:58%;
+	padding-right:5%;
+}
+
+#Footer .ColumnRight {
+	float:right;
+	width:30%;
+	border-left-style:solid;
+	border-left-width:2px;
+	padding-left:5%;
+}
+/******************************/
+
+/******************************/
+#Footer_Message {
+	width:90%;
+	margin:1em auto 1.5em;
+}
+
+#Footer_Message p {margin:0;}
+/******************************/
+
+/******************************/
+#Footer_Nav {
+	width:90%;
+	overflow:hidden;
+}
+
+#Footer_Nav h3 {
+	margin:0 0 0.33em;
+	padding:0;
+}
+
+#Footer_Nav ul {
+	padding:0;
+	margin:0;
+	margin-left:0.66em;
+}
+
+#Footer_Nav li {
+	padding:0;
+	margin:3px 0;
+	list-style-type:none;
+}
+
+#Footer_Nav a {
+	display:block;
+	padding:0.33em 0.5em;
+	border-left-style:solid;
+	border-left-width:0.5em;
+}
+/******************************/
+
+/******************************/
+#Footer_Logo_Copyright_Wrapper {
+	width:90%;
+	margin:2.5em auto 0;
+}
+
+#Footer #Copyright {margin:0;}
+/******************************/
+/********************************************************************/
+
+/********************************************************************/
+/*Standard Content*/
+.SubPage #Content h1 {margin:0.67em 0;}
+
+.SubPage #Content h2 {margin:0.75em 0;}
+.SubPage #Content_Primary h2 {
+	/*margin:0.75em 0;*/
+	border-left-style:solid;
+	border-left-width:0.5em;
+	margin-left:-0.5em;
+	margin-right:-0.5em;
+	padding:0.1em 0.33em 0.2em;
+	clear:both;
+}
+.SubPage #Content_Secondary h2 {}
+
+.SubPage #Content h3 {margin:0.83em 0;}
+
+.SubPage #Content h4, 
+p,
+ul,
+ol,
+fieldset,
+blockquote,
+.DataTable {margin:1.12em 0;}
+
+ol,
+ul {
+	padding-left:0;
+	margin-left:2.66em;
+}
+
+ol ul,
+ul ol,
+ul ul,
+ol ol {margin-top:0; margin-bottom:0}
+li {margin:0.6em 0;}
+
+.SubPage #Content h5 {margin:1.12em 0;}
+
+.SubPage #Content h6 {margin:1.12em 0;}
+
+#Content hr {
+	padding:0; margin:1.12em 0; /*Removes browser defaults*/
+	border-width:0; border-style:none; /*Removes browser defaults*/
+	border-bottom-style:solid;
+	border-bottom-width:1px; height:1px; /*Use same size*/
+	font-size:1em;
+}
+
+label[for] {cursor:pointer;}
+
+#Content fieldset {
+	padding:0.5em 0.66em 0.33em;
+	border-style:solid;
+	border-width:1px;
+}
+
+#Content legend {
+	margin:0; /*Vertical margins only work in Firefox & IE.*/
+	padding:0.2em 0.5em 0.33em;
+}
+
+#Content blockquote {
+	margin-left:2em;
+	margin-right:2em;
+	padding:0.25em 0.66em;
+	border-style:solid;
+	border-width:1px;
+}
+#Content blockquote cite {display:block;}
+
+.InputSet {
+	padding-right:1em;
+	padding-bottom:0.5em;
+}
+
+/******************************/
+.DataTable {
+	border-style:solid;
+	border-width:1px;
+}
+
+.DataTable th {}
+
+.DataTable th,
+.DataTable td {
+	padding:5px 5px;
+	border-style:solid;
+	border-width:1px;
+}
+
+.DataTable .Odd td {}
+.DataTable .Even td {}
+/******************************/
+
+/******************************/
+.UserAlertMessage_Info,
+.UserAlertMessage_Warning,
+.UserAlertMessage_Error {
+	width:80%;
+	margin:1.5em auto;
+	border-style:solid;
+	border-width:2px;
+}
+
+.UserAlertMessage_Info div,
+.UserAlertMessage_Warning div,
+.UserAlertMessage_Error div {padding:0.1em 0.5em 0.25em;}
+
+.UserAlertMessage_Info p,
+.UserAlertMessage_Warning p,
+.UserAlertMessage_Error p {margin:0.33em;}
+/******************************/
+
+/******************************/
+.Content_Image_Right {
+	 float:right;
+	 padding:2px;
+	 border-bottom-style:solid;
+	 border-bottom-width:10px;
+	 border-left-style:solid;
+	 border-left-width:10px;
+}
+
+.Content_Image_Left {
+	 float:left;
+	 padding:2px;
+	 border-bottom-style:solid;
+	 border-bottom-width:10px;
+	 border-right-style:solid;
+	 border-right-width:15px;
+}
+/******************************/
+/********************************************************************/
+
+/********************************************************************/
+/*Special Content*/
+
+/********************************************************************/

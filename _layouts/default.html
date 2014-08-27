@@ -1,15 +1,20 @@
 {% include doctype-and-head.html %}
 
 <body>
+	<div id="Page_Wrapper">
+		<div id="Shell_Wrapper" class="SubPage">
+			{% include header.html %}
 
-  {% include svg-defs.svg %}
+			<div id="Body">
+				<div id="Content">
+					{{ content }}
+				</div><!--Content-->
+			</div><!--Body-->
 
-  {% include header.html %}
+			{% include footer.html %}
+		</div><!--Shell_Wrapper-->
+	</div><!--Page_Wrapper-->
 
-  {{ content }}
-
-  {% include footer.html %}
-
+	{% include google.html %}
 </body>
-
 </html>

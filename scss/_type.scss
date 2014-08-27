@@ -1,0 +1,248 @@
+﻿/*This file is reserved for typography styles only. No color. No layout.*/
+
+/********************************************************************/
+/*Browser "quirks" overrides*/
+table {font-size:1em;} /*Fixes inheritance "bug" in all browsers*/
+a {text-decoration:underline;} /*Fixes "bug" in Opera.*/
+/********************************************************************/
+
+/********************************************************************/
+/*"Old school" deterrents*/
+b, i, u, font, center {font-size:5em !important;}
+/********************************************************************/
+
+/********************************************************************/
+/*Shell*/
+#Page_Wrapper {}
+
+#Shell_Wrapper {}
+
+#Shell_Wrapper .Home {}
+#Shell_Wrapper .SubPage {}
+
+#Header {}
+
+/******************************/
+.Logo a {
+	font-family:Georgia, "Times New Roman", Times, Serif;
+	font-size:1.66em;
+	font-weight:bold;
+	font-variant:small-caps;
+	line-height:1em;
+	text-align:center;
+	text-decoration:none;
+	/*white-space:nowrap;*/
+}
+.Logo a:hover {text-decoration:none;}
+/******************************/
+
+/******************************/
+#Nav_Primary {
+	font-size:0.8em;
+	font-weight:bold;
+}
+
+#Nav_Primary a {text-decoration:underline;}
+#Nav_Primary a:hover {text-decoration:none;}
+/******************************/
+
+#Body {}
+
+#Footer {}
+
+/******************************/
+#Footer_Nav {font-size:1em;}
+
+#Footer_Nav h3 {
+	font-size:1.2em;
+	font-weight:bold;
+	font-style:italic;
+}
+
+#Footer_Nav a {
+	font-size:1em;
+	font-weight:bold;
+	text-decoration:underline;
+}
+
+#Footer_Nav a:hover {text-decoration:none;}
+/******************************/
+
+#Footer_Message p {
+	font-size:1.2em;
+	font-weight:bold;
+	font-style:italic;
+	text-align:center;
+}
+
+#Footer .Logo {
+	font-size:0.9em;
+	text-align:center;
+}
+
+#Copyright {
+	white-space:nowrap;
+	text-align:center;
+	line-height:1.5em;
+}
+/********************************************************************/
+
+/********************************************************************/
+/*Standard Content*/
+body {
+	/*font-family:Arial, Verdana, Sans-Serif;*/
+	/*font-family:Georgia, "Times New Roman", Times, Serif;*/
+	font-family:"Palatino Linotype", Palatino, "Times New Roman", Times, Serif;
+	font-size:100%; /*100%~12pt~16px*/
+	/*font-size:82%; /*82%~10pt~13px*/
+}
+
+.SubPage #Content h1 {
+	font-size:1.8em;
+	font-weight:bold;
+	font-style:italic;
+	text-align:center;
+}
+.SubPage #Content h1:before {content:"~ ";}
+.SubPage #Content h1:after {content:" ~";}
+
+.SubPage #Content h2 {
+	font-size:1.4em;
+	font-weight:bold;
+}
+.SubPage #Content_Primary h2 {
+	font-size:1.2em;
+	/*font-weight:bold;*/
+	font-variant:small-caps;
+	line-height:1.1em;
+	letter-spacing:0.1em;
+}
+.SubPage #Content_Secondary h2 {}
+
+.SubPage #Content h3 {
+	font-size:1.2em;
+	font-weight:bold;
+}
+.SubPage #Content_Primary h3 {
+	font-size:1.1em;
+	/*font-weight:bold;*/
+	font-variant:small-caps;
+	letter-spacing:0.1em;
+}
+.SubPage #Content_Secondary h3 {}
+
+.SubPage #Content h4,
+p,
+ul,
+ol,
+fieldset,
+blockquote,
+.DataTable {
+	font-size:1em;
+	line-height:1.15em; /*Browser Default 1.15em*/
+}
+
+.SubPage #Content h4 {
+	margin-bottom:-1.15em; /*Should match(-) p {line-height}*/
+	font-weight:bold;
+}
+.SubPage #Content_Primary h4 {
+	font-variant:small-caps;
+	letter-spacing:0.1em;
+}
+.SubPage #Content_Secondary h4 {}
+
+.SubPage #Content h5 {
+	font-size:1em;
+	font-weight:bold;
+}
+.SubPage #Content_Primary h5 {
+	/*font-size:1em;*/
+	/*font-weight:bold;*/
+	font-variant:small-caps;
+	letter-spacing:0.1em;
+}
+.SubPage #Content_Secondary h5 {}
+
+.SubPage #Content h6 {
+	font-size:1em;
+	font-weight:bold;
+}
+.SubPage #Content_Primary h6 {
+	/*font-size:1em;*/
+	/*font-weight:bold;*/
+	font-variant:small-caps;
+	letter-spacing:0.1em;
+}
+.SubPage #Content_Secondary h6 {}
+
+#Content a {
+	text-decoration:underline;
+	font-weight:bold;
+}
+#Content a:hover {text-decoration:none;}
+
+.ie6, .ie7 {
+	#Content hr {margin:0.5em 0;} /*IE has some default "margins" that cannot be removed so we make the margins smaller for IE vs other browsers.*/
+}
+
+#Content label {font-weight:bold;}
+
+#Content legend {
+	font-size:1.2em;
+	font-weight:bold;
+	font-variant:small-caps;
+	line-height:1em;
+	letter-spacing:0.1em;
+
+	.ie6 &, .ie7 & {
+		margin-bottom:0.5em; /*Gives additional space below legend in IE.*/
+		margin-left:-0.5em; /*Removes extra left margin in IE.*/
+		margin-top:-1.6em; /*Fix for fieldset background expanding past top border*/
+	}
+}
+
+#Content blockquote cite:before {content:"~ ";}
+
+#Content cite {font-style:italic;}
+
+.Note {font-style:italic;}
+
+.Email {font-weight:bold;}
+
+/******************************/
+.DataTable {}
+
+.DataTable th {
+	font-weight:bold;
+	text-align:center;
+	vertical-align:middle;
+}
+
+.DataTable th,
+.DataTable td {}
+
+.DataTable .Odd td {}
+.DataTable .Even td {}
+/******************************/
+
+/******************************/
+.UserAlertMessage_Info,
+.UserAlertMessage_Warning,
+.UserAlertMessage_Error {text-align:center;}
+
+.UserAlertMessage_Info div,
+.UserAlertMessage_Warning div,
+.UserAlertMessage_Error div {
+	font-size:1.2em;
+	font-weight:bold;
+	font-variant:small-caps;
+	line-height:1.1em;
+}
+/******************************/
+/********************************************************************/
+
+/********************************************************************/
+/*Special Content*/
+
+/********************************************************************/

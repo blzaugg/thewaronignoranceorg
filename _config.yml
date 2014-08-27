@@ -1,6 +1,6 @@
-name: Katie Kovalcin
+name: The War on Ignorance
 markdown: redcarpet
-baseurl: "http://katiekovalcin.github.io/kovalcin"
+baseurl: "http://www.thewaronignorance.org"
 exclude: [
   .git,
   .gitignore,
@@ -9,9 +9,9 @@ exclude: [
   svg,
   scss,
   .sass-cache,
-  package.json, 
-  Gruntfile.js, 
-  node_modules, 
+  package.json,
+  Gruntfile.js,
+  node_modules,
   readme.md
 ]
 

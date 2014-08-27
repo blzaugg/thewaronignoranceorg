@@ -1,0 +1,197 @@
+﻿/*This file is reserved for color styles only. No typography. No layout.*/
+
+/********************************************************************/
+/*"Old school" deterrents*/
+b, i, u, font, center {
+	color:Lime !important;
+	background-color:Fuchsia !important;
+}
+/********************************************************************/
+
+/********************************************************************/
+/*Shell*/
+body {background-color:#232009;}
+
+#Page_Wrapper {}
+
+#Shell_Wrapper {background-color:#464012;}
+
+#Shell_Wrapper .Home {}
+#Shell_Wrapper .SubPage {}
+
+#Header {
+	border-bottom-color:#E2DEBC;
+	background-color:#820A0A;
+}
+
+/******************************/
+.Logo a {
+	color:#ffffff;
+	border-color:#E2DEBC;
+}
+.Logo a:hover {
+	color:#ffffff;
+	background-color:#5B0B0B;
+}
+/******************************/
+
+/******************************/
+#Nav_Primary a {
+	color:#ffffff;
+	background-color:#700808;
+	border-top-color:#5B0B0B;
+}
+#Nav_Primary a:hover {
+	color:#ffffff;
+	background-color:#5B0B0B;
+	border-top-color:#480A0A;
+}
+/******************************/
+
+#Body {}
+
+#Footer {
+	border-top-color:#E2DEBC;
+	background-color:#820A0A;
+}
+
+#Footer_Nav a {
+	color:#ffffff;
+	background-color:#700808;
+	border-left-color:#5B0B0B;
+}
+#Footer_Nav a:hover {
+	color:#ffffff;
+	background-color:#5B0B0B;
+	border-left-color:#480A0A;
+}
+/********************************************************************/
+
+/********************************************************************/
+/*Standard Content*/
+body {color:#E2DEBC;}
+
+.SubPage #Content h1 {color:#FFFFFF;}
+
+.SubPage #Content_Primary h2 {
+	color:#FFFFFF;
+	background-color:#34300E;
+	border-bottom-color:#E2DEBC;
+	border-left-color:#820A0A;
+}
+.SubPage #Content_Secondary h2 {}
+
+.SubPage #Content_Primary h3 {color:#FFFFFF;}
+.SubPage #Content_Secondary h3 {}
+
+#Content a {color:#FFFFFF;}
+#Content a:hover {
+	color:#820A0A;
+	background-color:#E2DEBC;
+}
+
+#Content hr {
+	background-color:Transparent; /*Removes browser defaults*/
+	color:#464012; /*Use value of content background-color*/
+	border-bottom-color:#E2DEBC;
+}
+
+#Content label {/*color:#FFFFFF;*/}
+
+#Content fieldset {
+	border-color:#34300E;
+	background-color:#544D16;
+}
+
+#Content legend {
+	color:#FFFFFF;
+	background-color:#34300E;
+}
+
+#Content blockquote {
+	border-color:#34300E;
+	background-color:#544D16;
+}
+
+.Email {color:#FFFFFF;}
+
+/******************************/
+.DataTable {border-color:#34300E;}
+
+.DataTable th {
+	background-color:#34300E;
+	color:#ffffff;
+}
+
+.DataTable th,
+.DataTable td {border-color:#464012;}
+
+.DataTable .Odd td {background-color:#464012;}
+.DataTable .Even td {background-color:#544D16;}
+/******************************/
+
+/******************************/
+.UserAlertMessage_Info {
+	background-color:#ffffd7;
+	border-color:#5A7813;
+	color:#232009;
+}
+.UserAlertMessage_Warning {
+	background-color:#ffffd7;
+	border-color:#B98026;
+	color:#232009;
+}
+.UserAlertMessage_Error {
+	background-color:#ffffd7;
+	border-color:#820A0A;
+	color:#232009;
+}
+
+#Content .UserAlertMessage_Info a,
+#Content .UserAlertMessage_Warning a,
+#Content .UserAlertMessage_Error a {
+	color:#820A0A;
+}
+#Content .UserAlertMessage_Info a:hover,
+#Content .UserAlertMessage_Warning a:hover,
+#Content .UserAlertMessage_Error a:hover {
+	color:#232009;
+	background-color:#E2DEBC;
+	text-decoration:none;
+}
+
+.UserAlertMessage_Info div {
+	color:#ffffff;
+	background-color:#5A7813;
+}
+.UserAlertMessage_Warning div {
+	color:#ffffff;
+	background-color:#B98026;
+}
+.UserAlertMessage_Error div {
+	color:#ffffff;
+	background-color:#820A0A;
+}
+/******************************/
+
+/******************************/
+.Content_Image_Right {
+	color:#000000;
+	background-color:#34300E;
+	border-bottom-color:#464012;
+	border-left-color:#464012;
+}
+
+.Content_Image_Left {
+	color:#000000;
+	background-color:#34300E;
+	border-bottom-color:#464012;
+	border-right-color:#464012;
+}
+/******************************/
+/********************************************************************/
+
+/********************************************************************/
+/*Special Content*/
+
+/********************************************************************/
