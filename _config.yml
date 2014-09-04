@@ -1,6 +1,6 @@
 name: The War on Ignorance
 markdown: redcarpet
-baseurl: "http://blzaugg.github.io/thewaronignoranceorg/"
+baseurl: "http://www.thewaronignorance.org"
 exclude: [
   .git,
   .gitignore,
